@@ -1,10 +1,10 @@
 // create a function to determine the number of bottles of milk
 // that can be purchased with milk costing $1.50
 
-function getMilk(money){
-    console.log("You can buy " + calcBottles(money,1.5) + " bottles of milk.");
+function getMilk(money,costPerBottle){
+    console.log("You can buy " + calcBottles(money,costPerBottle) + " bottles of milk.");
 
-    return money%1.5 //remainder equals the amount of change
+    return calcChange(money,1.5) //remainder equals the amount of change
 }
 
 function calcBottles(startingMoney, costPerBottle) {
@@ -13,5 +13,10 @@ function calcBottles(startingMoney, costPerBottle) {
     return numberOfBottles;
 }
 
-getMilk(5);
+function calcChange(startingAmount,costPerBottle){
+    var change = (startingAmount%costPerBottle);
+    return change;
+}
+
+console.log("You have " + getMilk(5, 1.5) + " of change.");
 
