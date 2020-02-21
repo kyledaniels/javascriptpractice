@@ -4,7 +4,7 @@
 function getMilk(money,costPerBottle){
     console.log("You can buy " + calcBottles(money,costPerBottle) + " bottles of milk.");
 
-    return calcChange(money,1.5) //remainder equals the amount of change
+    return calcChange(money,costPerBottle) //remainder equals the amount of change
 }
 
 function calcBottles(startingMoney, costPerBottle) {
