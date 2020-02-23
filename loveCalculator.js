@@ -3,9 +3,9 @@
 var name1 = prompt("What is your name?");
 var name2 = prompt("What is your name?");
 
-var chanceOfLove = Math.random();
-chanceOfLove = chanceOfLove * 9;
-chanceOfLove = Math.floor(chanceOfLove * 9) + 1;
+var chanceOfLove = Math.floor((Math.random()*9)+ 1);
+// chanceOfLove = chanceOfLove * 9;
+// chanceOfLove = Math.floor(chanceOfLove * 9) + 1;
 
-alert(name1 + " " + name2 + (" You have a " + chanceOfLove + "%  chance of Love!!!" ));
+alert(name1 + "and " + name2 + (" You have a " + chanceOfLove + "%  chance of Love!!!" ));
 
