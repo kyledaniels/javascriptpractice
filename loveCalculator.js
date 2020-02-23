@@ -3,7 +3,7 @@
 var name1 = prompt("What is your name?");
 var name2 = prompt("What is your name?");
 
-var chanceOfLove = Math.floor((Math.random()*9)+ 1);
+var chanceOfLove = Math.floor((Math.random()*100)+ 1);
 // chanceOfLove = chanceOfLove * 9;
 // chanceOfLove = Math.floor(chanceOfLove * 9) + 1;
 
