@@ -7,5 +7,10 @@ var chanceOfLove = Math.floor((Math.random()*100)+ 1);
 // chanceOfLove = chanceOfLove * 9;
 // chanceOfLove = Math.floor(chanceOfLove * 9) + 1;
 
+if (chanceOfLove === 100){
+    alert("You two were made in Heaven for each other")
+}
+ else if  (chanceOfLove )
+
 alert(name1 + "and " + name2 + (" You have a " + chanceOfLove + "%  chance of Love!!!" ));
 
