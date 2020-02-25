@@ -32,18 +32,32 @@
 //     }
 // }
 
+// function isLeap(year){
+//    if (year%4===0){
+//      if (year%100===0){
+//        if(year%400===0){
+//            return "leap year"
+//        } else{
+//            return "not a leap year"
+//        }
+//      }else {
+//          return "leap year"
+//      }
+//    } else{
+//        return "not a leap"
+//    }
+// }
+
 function isLeap(year){
-   if (year%4===0){
-     if (year%100===0){
-       if(year%400===0){
-           return "leap year"
-       } else{
-           return "not a leap year"
-       }
-     }else {
-         return "leap year"
+  if(year%4===0){
+    if(year%100===0)
+     if(year%400===0){
+       return "leap year"
+     } else{
+       return "no leap year"
      }
-   } else{
-       return "not a leap"
-   }
+     {
+      return "leap year"
+    }
+  } return "no leap year"
 }
