@@ -2,7 +2,25 @@
 // Buzz for every multiple of 5
 // FizzBuzz for every number that is a multiple of 3 and 5
 
-var number = []
+var output = []
+var count = 1;
+
 function fizzBuzz(){
-  if(n)
+
+ 
+ if(count%3===0){
+   output.push("fizz")
+ } 
+ else if (count%5===0){
+   output.push("bizz")
+ }
+ else{
+   output.push(number)
+ }
+
+
+  
+  console.log(output);
 }
+
+
