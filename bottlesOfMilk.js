@@ -36,7 +36,7 @@ function calChange(amountOfMoney,costPerBottle){
 
 }
 
-console.log("You have " + getMilk(5,1.5) + " of change.")
+console.log("You have " + getMilk(5,1.5) + " of change")
 
 
 
