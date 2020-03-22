@@ -31,4 +31,11 @@ function getSleepHours(day){
    calculateSleepHours= ()=>{
     actualSleepHours===getActualSleepHours()
     idealSleepHours===getIdealSleepHours()
+    if(actualSleepHours===idealSleepHours){
+       console.log('I get the perfect amount of sleep')
+    }else if(actualSleepHours>idealSleepHours){
+       console.log('I got more than enough sleep')
+    } else if(actualSleepHours<idealSleepHours){
+       conosle.log('I need to get some more sleep')
+    }
   }
