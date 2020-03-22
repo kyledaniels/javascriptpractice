@@ -28,3 +28,7 @@ function getSleepHours(day){
      var idealHours=8;
      return (idealHours*7);
    }
+   calculateSleepHours()=>{
+    actualSleepHours===getActualSleepHours()
+    idealSleepHours===getIdealSleepHours()
+  }
