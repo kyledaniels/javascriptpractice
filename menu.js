@@ -42,6 +42,11 @@ addDishToCourse(courseName,dishName,dishPrice){
      price:dishPrice,
    }
     return this._courses[courseName].push(dish);
-}
-    
+},
+
+getRandomDishFromCourse(courseName){
+    const dishes = this.courses[courseName];
+    const randomIndex = Math.floor(Math.random() * dishes.length);
+    return dishes[randomIndex]
+
   };
