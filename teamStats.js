@@ -1,4 +1,4 @@
-const team = {
+cconst team = {
     _players:[
       {
         firstname:'Pablo',
@@ -35,15 +35,48 @@ const team = {
     opponentPoints: 17
     }
     ],
-    get _Players(){
-    return this._players;
+  
+    get players(){
+     return this._players;
   },
   
-  get _games(){
+    get games(){
      return this._games;
-  }
+  },
   
   addPlayer(firstName,lastName,age){
-       
+       let player={
+         firstName:firstName,
+         lastName:lastName,
+         age:age
+       }
+      this.players.push(player)
+  
+  },
+      addGame(opponent,teamPoints,opponentPoints){
+        let game={
+          opponent:opponent,
+          teamPoints:teamPoints,
+          opponentPoints:opponentPoints
+        }
+     this.games.push(game)
+      }
   }
-  }
+  
+  team.addPlayer('Steph','Curry',28);
+  team.addPlayer('Lisa','Leslie',44);
+  team.addPlayer('Bugs','Bunny',76);
+  
+   console.log(team.players)
+  
+  team.addGame('Redskins',44,28);
+  team.addGame('Cowboys',20,44);
+  team.addGame('Seahawks',15,10);
+  
+  console.log(team.games)
+  
+  
+  
+  
+  
+  
