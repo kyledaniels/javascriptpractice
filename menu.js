@@ -58,4 +58,16 @@ getRandomDishFromCourse(courseName){
       return `Your meal is ${appetizer.name}, ${main.name}, and ${dessert.name},
       and the total price is ${totalPrice}`;
   }
-}
+};
+
+menu.addDishToCourse('appetizers','salad',4.00);
+menu.addDishToCourse('appetizers','wings',5.00);
+menu.addDishToCourse('appetizers','fries',4.50);
+
+menu.addDishToCourse('mains','steak',14.00);
+menu.addDishToCourse('mains','salmon',20.00);
+menu.addDishToCourse('mains','chicken',10.00);
+
+menu.addDishToCourse('deserts','coffee',4.00);
+menu.addDishToCourse('deserts','ice cream',5.00);
+menu.addDishToCourse('deserts','cake',6.00);
